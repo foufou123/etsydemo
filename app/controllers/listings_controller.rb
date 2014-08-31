@@ -7,8 +7,6 @@ class ListingsController < ApplicationController
     @listings = Listing.all
   end
 
-  # GET /listings/1
-  # GET /listings/1.json
   def show
   end
 

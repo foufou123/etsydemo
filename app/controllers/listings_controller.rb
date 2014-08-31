@@ -18,7 +18,6 @@ class ListingsController < ApplicationController
   def edit
   end
 
-  # POST /listings
   def create
     @listing = Listing.new(listing_params)
 
@@ -34,7 +33,6 @@ class ListingsController < ApplicationController
   end
 
 
-  # PATCH/PUT /listings/1.json
   def update
     respond_to do |format|
       if @listing.update(listing_params)

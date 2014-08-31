@@ -19,7 +19,6 @@ class ListingsController < ApplicationController
   end
 
   # POST /listings
-  # POST /listings.json
   def create
     @listing = Listing.new(listing_params)
 

@@ -44,7 +44,6 @@ class ListingsController < ApplicationController
     end
   end
 
-  # DELETE /listings/1.json
   def destroy
     @listing.destroy
     respond_to do |format|

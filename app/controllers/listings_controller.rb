@@ -14,7 +14,6 @@ class ListingsController < ApplicationController
     @listing = Listing.new
   end
 
-  # GET /listings/1/edit
   def edit
   end
 

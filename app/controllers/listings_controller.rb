@@ -14,7 +14,6 @@ class ListingsController < ApplicationController
   end
 
   def edit
-    @listing = Lising.find(params(:id))
   end
 
   def create

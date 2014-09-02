@@ -1,7 +1,6 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
 
-  # GET /listings
   # GET /listings.json
   def index
     @listings = Listing.all
@@ -15,6 +14,7 @@ class ListingsController < ApplicationController
   end
 
   def edit
+    @listing = Lising.find(params(:id))
   end
 
   def create
@@ -57,7 +57,6 @@ class ListingsController < ApplicationController
       @listing = Listing.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
       params.require(:listing).permit(:name, :description, :price)
     end
